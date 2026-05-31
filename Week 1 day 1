@@ -1,0 +1,19 @@
+//osc(3, .8 .8)
+//osc(100,.28,6)
+//change from 1, to 12 and to 100 to 1000
+osc(12,.18,2)
+  //.brightness(.1, 1.1, .6)
+.brightness(-2,0, 8)
+.rotate(x=> 2*Math.sin(.1*time))
+//.rotate(x=> 3*Math.sin(.2*time))
+// .modulate(noise(), 1 )
+  .kaleid(7)
+  // .add(gradient(6),0.5)
+  //remove .5 
+  .add(gradient(7),.3)
+  //.add(noise(1, 1, 9),2)
+  //adding this causes flashing lights second number
+.add(noise(1, 1, 16),2)
+  //.add(noise(1.8, 2, 10), 6)
+ .add(noise(1.8, .2, 10), 6)
+.out()
