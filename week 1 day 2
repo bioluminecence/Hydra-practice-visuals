@@ -1,0 +1,14 @@
+
+osc(10,.2,2000)
+
+ .modulate(noise(), .1 )
+ .modulate(voronoi(), 11 )
+ .add(gradient(4),3)
+.posterize(3)
+.shift(3)
+ //.add(noise(3, .2, 10), 6)
+//.add(voronoi(3,1,4),2)
+.add(voronoi(1,2,21),.7)
+
+
+.out()
